@@ -7,7 +7,7 @@ export default function History({ gratitudes, onDelete }) {
       <span className="flex flex-col p-5 items-center">
         {gratitudes.map((g, i) => (
           <div className="p-3 " key={i}>
-            <Card gratitude={gratitudes[i]} onDelete={onDelete}></Card>
+            <Card gratitude={gratitudes[i].entry} onDelete={onDelete}></Card>
           </div>
         ))}
       </span>
